@@ -17,7 +17,11 @@
     <h1>"Glass Luck Club" - The Vision</h1>
 
     <p>
-        <code>Glass Luck Club</code> is a community of app developers for Google Glass. We share our code and expertise, and we collaborate toward the common goal.
+        <code>The Glass Luck Club</code> is a community of app developers for Google Glass. 
+        We teach and learn from each other, 
+        we share our code and expertise, 
+        and we collaborate toward the common goal,
+        that is, making Google Glass a reality.
         (The phrase "glass luck" is a pun on the word "potluck",
         and we have tentatively chosen this name
         to emphasize the spirit of <i>sharing</i>.)
@@ -54,8 +58,18 @@
     ================================================== -->
     <script src="http://code.jquery.com/jquery.js"></script>
     <script type="text/javascript" src="js/debugutil-1.0.js"></script>
+    <script type="text/javascript" src="js/signuppad-fiveten-1.0.js"></script>
     <script defer type="text/javascript" src="js/signupmanager-1.1.js"></script>
 
+    <script>
+    // "Init"
+    $(function() {
+        $("#glc_signup_email").focus().select();
+    	// Peeng?
+    	var fiveTenTimer = new fiveten.FiveTenTimer(4771, 3);
+    	fiveTenTimer.start();
+    });
+    </script>
 
     <script> 
     var successCallback = function() {
